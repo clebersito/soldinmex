@@ -1,7 +1,6 @@
 <?php
 $nombre = $_POST['nombre'];
 $mail = $_POST['email'];
-$number = $_POST['numero']
 $empresa = $_POST['mensaje'];
 
 $header = 'From: ' . $mail . " \r\n";
@@ -11,11 +10,10 @@ $header .= "Content-Type: text/plain";
 
 $mensaje = "Este mensaje fue enviado por " . $nombre . ",\r\n";
 $mensaje .= "Su e-mail es: " . $mail . " \r\n";
-$mensaje .= "Su número es: " . $numero . "\r\n";
 $mensaje .= "Mensaje: " . $_POST['mensaje'] . " \r\n";
 $mensaje .= "Enviado el " . date('d/m/Y', time());
 
-$para = 'javierhernandezmendoza123@gmail.com';
+$para = 'javitetrolleo@gmail.com';
 $asunto = 'Mensaje de mi sitio web';
 
 mail($para, $asunto, utf8_decode($mensaje), $header);

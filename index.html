@@ -19,7 +19,7 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#"><img class="logo-brand" src="img/Logo.png" alt="Soldinmex"></a>
+                <a class="navbar-brand" href="#"><img class="logo-brand" src="" alt="Soldinmex"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <ion-icon name="menu-outline"></ion-icon>
                 </button>
@@ -218,35 +218,32 @@
                     </div>
                     <div class="col-md-6 topmargin-sm">
                         <center><h3>Envianos un Correo</h3></center>
-                        <form id="contact-form" class="contact" name="contact-form" method="POST" action="enviar2.php">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <input type="text" name="nombre" class="form-control name-field" required="required" placeholder="Tu nombre">
+                        <div id="ctn_form">
+                            <form id="contact-form" class="contact" name="contact-form" method="POST" action="enviar2.php">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" name="nombre" class="form-control name-field" required="required" placeholder="Tu nombre">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="email" name="email" class="form-control name-field" required="required" placeholder="Tu email">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea name="mensaje" id="message" class="form-control" required="required" rows="5" placeholder="Mensaje"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <center><a type="submit" class="btn btn-dark" href="">Enviar</a></center>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <input type="email" name="email" class="form-control name-field" required="required" placeholder="Tu email">
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <input type="number" name="numbero" class="form-control name-field" placeholder="Numero Telefonico">
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <textarea name="mensaje" id="message" class="form-control" required="required" rows="5" placeholder="Mensaje"></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <center><a type="submit" class="btn btn-dark" href="">Enviar</a></center>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
